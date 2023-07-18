@@ -46,7 +46,7 @@
 					 <!-- CONTAINER -->
 					 <div class="main-container container-fluid">
 
-                        {% block content %}{% endblock %}
+                        {% block content %}{% endblock content %}
 
                     </div>
                         <!-- MAIN-CONTAINER END -->
@@ -56,7 +56,7 @@
         </div>
             <!-- PAGE-MAIN END -->
 
-        {% block modal %}{% endblock %}
+        {% block modal %}{% endblock modal %}
 
         <!-- MODAL -->
         {% include 'components/layouts/modal.html' %}
@@ -69,7 +69,7 @@
 
     <!-- SCRIPTS -->
     {% include 'components/layouts/scripts.html' %}
-    {% block scripts %}{% endblock %}
+    {% block scripts %}{% endblock scripts %}
 
 </body>
 

@@ -16,7 +16,7 @@
 
         <!-- STYLES -->
         {% include 'components/layouts/custom-styles.html' %}
-        {% block styles %}{% endblock %}
+        {% block styles %}{% endblock styles %}
 
     </head>
 
@@ -27,7 +27,7 @@
         <!-- SWITCHER END-->
 
         <!-- ERROR-BG -->
-        {% block class %}{% endblock %}
+        {% block class %}{% endblock class %}
         
         <!-- GLOBAL-LOADER -->
 		<div id="global-loader">
@@ -42,13 +42,13 @@
 
         <!-- PAGE -->
 
-        {% block content %}{% endblock %}
+        {% block content %}{% endblock content %}
 
         <!-- PAGE END -->
 
         <!-- SCRIPTS -->
         {% include 'components/layouts/custom-scripts.html' %}
-        {% block scripts %}{% endblock %}
+        {% block scripts %}{% endblock scripts %}
         
     </body>
 

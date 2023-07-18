@@ -14,7 +14,7 @@
 
     <!-- STYLES -->
     {% include 'components/layouts/styles.html' %}
-    {% block styles %}{% endblock %}
+    {% block styles %}{% endblock styles %}
 
 </head>
 
@@ -36,11 +36,11 @@
 
 					 <!-- CONTAINER -->
 					 <div class="main-container container-fluid">
-
+                           
                         {% block content %}
                         
                         
-                        {% endblock %}
+                        {% endblock content %}
 
                     </div>
                         <!-- MAIN-CONTAINER END -->
@@ -50,8 +50,7 @@
         </div>
             <!-- PAGE-MAIN END -->
 
-        {% block modal %}{% endblock %}
-
+     
         <!-- MODAL -->
         {% include 'components/layouts/modal.html' %}
 
@@ -63,7 +62,7 @@
 
     <!-- SCRIPTS -->
     {% include 'components/layouts/scripts.html' %}
-    {% block scripts %}{% endblock %}
+    {% block scripts %}{% endblock scripts%}
 
 </body>
 
